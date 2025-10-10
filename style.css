@@ -80,7 +80,7 @@ body {
     grid-template-columns: repeat(16, 1fr);
     width: calc(100vw - 2%);
     height: 100vh;
-    gap: calc((10vw / 10)*4);
+    gap: 15px;
     margin-left: 2%;
 }
 .fundoelemento {
@@ -98,3 +98,4 @@ body {
     border-radius: 10px;
     background-color: rgb(0, 2, 58);
 }
+
