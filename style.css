@@ -70,8 +70,7 @@ body {
 }
 #descricao-personagem {
     transition: 0.05s ease-in-out;
-    width: 50%;
-    margin-top: 50px;
+    width: 90%;
     font-size: 20px;
 }
 .fundo {
@@ -90,4 +89,12 @@ body {
     height: 1vh;
     width: 1vh;
     background-color: rgba(0, 3, 88, 1);
+}
+.descricaodiv {
+    margin-top: 20px;
+    justify-items: center;
+    width: 50vw;
+    height: 32vh;
+    border-radius: 10px;
+    background-color: rgb(0, 2, 58);
 }
