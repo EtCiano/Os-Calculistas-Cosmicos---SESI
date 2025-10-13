@@ -1,9 +1,11 @@
+export let personagem = null;
+export let itens = [];
+
 const pitagoras = document.getElementById('pitagoras');
 const newton = document.getElementById('newton');
 const albert = document.getElementById('albert');
 const bombado = document.getElementById('bombado');
 const descricao = document.getElementById('descricao-personagem');
-let personagem;
 
 bombado.addEventListener('mouseenter', () => {
     descricao.textContent = 'Oppenheimer é o calculista quântico, um personagem de alto risco e alta recompensa. Sua arma, o Dado Quântico, força o jogador a resolver problemas de probabilidade para atacar. Suas habilidades se baseiam na incerteza e na criação de poderosas Reações em Cadeia. Ele é ideal para jogadores que gostam de apostas calculadas para resolver problemas massivos. Suas ações, no entanto, podem ter consequências imprevisíveis.';
@@ -21,8 +23,8 @@ albert.addEventListener('mouseenter', () => {
     descricao.textContent = 'Einstein é um pensador pacifista que distorce as próprias regras da realidade. Seu Relógio de Bolso Geodésico manipula o fluxo do tempo, desacelerando obstáculos e inimigos. Ele absorve energia para resolver puzzles com o Efeito Fotoelétrico. Sua habilidade suprema, baseada em E=mc², converte massa em energia para limpar áreas. Seu gameplay é focado na lógica, criatividade e na manipulação do espaço-tempo.';
 });
 
-pitagoras.addEventListener('click', () => { //ainda estou fazendo os dos outros personagens
-    personagem = ({
+pitagoras.addEventListener('click', () => {  
+    personagem = {
         index: 'pitagoras',
         nome: 'Pitágoras',
         vidatotal: 15,
@@ -65,8 +67,8 @@ pitagoras.addEventListener('click', () => { //ainda estou fazendo os dos outros 
             tempo: 3
         },
         CA: 15
-    })
-    itens = [(
+    }
+    itens = [
         {   
             index: 'Lira',
             nome: 'Lira',
@@ -103,11 +105,14 @@ pitagoras.addEventListener('click', () => { //ainda estou fazendo os dos outros 
             curacondicaomental: 4,
             tempo: null
         }
-    )]
+    ]
+    localStorage.setItem('personagem', JSON.stringify(personagem));
+    localStorage.setItem('itens', JSON.stringify(itens));
     window.open("dialogo1.html", "_self");
 })
-newton.addEventListener('click', () => { //ainda estou fazendo os dos outros personagens
-    personagem = ({
+
+newton.addEventListener('click', () => {  
+    personagem = {
         index: 'newton',
         nome: 'Isacc Newton',
         vidatotal: 12,
@@ -150,8 +155,8 @@ newton.addEventListener('click', () => { //ainda estou fazendo os dos outros per
             tempo: 3
         },
         CA: 15
-    })
-    itens = [(
+    }
+    itens = [
         {   
             index: 'telescopio',
             nome: 'Telescópio Refletor',
@@ -191,11 +196,14 @@ newton.addEventListener('click', () => { //ainda estou fazendo os dos outros per
             aumento_de_dano: null,
             tempo: 3
         }
-    )]
+    ]
+    localStorage.setItem('personagem', JSON.stringify(personagem));
+    localStorage.setItem('itens', JSON.stringify(itens));
     window.open("dialogo1.html", "_self");
 })
-albert.addEventListener('click', () => { //ainda estou fazendo os dos outros personagens
-    personagem = ({
+
+albert.addEventListener('click', () => {
+    personagem = {
         index: 'albert',
         nome: 'Albert Einstein',
         vidatotal: 18,
@@ -238,8 +246,8 @@ albert.addEventListener('click', () => { //ainda estou fazendo os dos outros per
             tempo: 3
         },
         CA: 15
-    })
-    itens = [(
+    }
+    itens = [
         {   
             index: 'bussola',
             nome: 'Bússola de Gedanken',
@@ -279,11 +287,14 @@ albert.addEventListener('click', () => { //ainda estou fazendo os dos outros per
             aumento_de_dano: null,
             tempo: 1
         }
-    )]
+    ]
+    localStorage.setItem('personagem', JSON.stringify(personagem));
+    localStorage.setItem('itens', JSON.stringify(itens));
     window.open("dialogo1.html", "_self");
 })
-bombado.addEventListener('click', () => { //ainda estou fazendo os dos outros personagens
-    personagem = ({
+
+bombado.addEventListener('click', () => {  
+    personagem = {
         index: 'robert',
         nome: 'J. Robert Oppenheimer',
         vidatotal: 12,
@@ -326,8 +337,8 @@ bombado.addEventListener('click', () => { //ainda estou fazendo os dos outros pe
             tempo: 3
         },
         CA: 15
-    })
-    itens = [(
+    }
+    itens = [
         {   
             index: 'cigarro',
             nome: 'Cigarro da Contemplação Crítica',
@@ -367,6 +378,8 @@ bombado.addEventListener('click', () => { //ainda estou fazendo os dos outros pe
             aumento_de_dano: 5,
             tempo: null
         }
-    )]
+    ]
+    localStorage.setItem('personagem', JSON.stringify(personagem));
+    localStorage.setItem('itens', JSON.stringify(itens));
     window.open("dialogo1.html", "_self");
 })
