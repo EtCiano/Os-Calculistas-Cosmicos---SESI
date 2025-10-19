@@ -29,7 +29,8 @@ pitagoras.addEventListener('click', () => {
         nome: 'Pitágoras',
         vidatotal: 15,
         vidaatual: 15,
-        Condicaomental: 12, 
+        condicaomentalatual: 12, 
+        condicaomentaltotal: 12,
         arma: {
             nome: 'Régua Áurea',
             funcao: 'role 1d20 e caso caia mais que a CA do inimigo role 1d10 para o dano.',
@@ -117,7 +118,8 @@ newton.addEventListener('click', () => {
         nome: 'Isacc Newton',
         vidatotal: 12,
         vidaatual: 12,
-        Condicaomental: 12, 
+        condicaomentalatual: 12, 
+        condicaomentaltotal: 12,
         arma: {
             nome: 'Maçã Gravitacional',
             funcao: 'role 1d20 e caso caia mais que a CA do inimigo role 1d10 para o dano.',
@@ -208,7 +210,8 @@ albert.addEventListener('click', () => {
         nome: 'Albert Einstein',
         vidatotal: 18,
         vidaatual: 18,
-        Condicaomental: 12, 
+        condicaomentalatual: 12, 
+        condicaomentaltotal: 12,
         arma: {
             nome: 'Caneta da Teoria',
             funcao: 'role 1d20 e caso caia mais que a CA do inimigo role 1d10 para o dano.',
@@ -299,7 +302,8 @@ bombado.addEventListener('click', () => {
         nome: 'J. Robert Oppenheimer',
         vidatotal: 12,
         vidaatual: 12,
-        Condicaomental: 12, 
+        condicaomentalatual: 12, 
+        condicaomentaltotal: 12,
         arma: {
             nome: 'Isótopos Instáveis',
             funcao: 'role 1d20 e caso caia mais que a CA do inimigo role 1d10 para o dano.',
