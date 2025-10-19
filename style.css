@@ -6,10 +6,9 @@
     --cor-texto-secundario: black;
     --cor-destaque: bisque;
 }
-
 body {
     padding: 0;
-    margin: 10px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,17 +47,6 @@ body {
     }
     100% {
         text-shadow: var(--cor-destaque) 0px 0px 0px;
-    }
-}
-@keyframes animacaodiv {
-    0% {
-        box-shadow: var(--cor-destaque) 0px 0px 0px 0px;
-    }
-    50% {
-        box-shadow: var(--cor-destaque) 0px 0px 10px 5px;
-    }
-    100% {
-        box-shadow: var(--cor-destaque) 0px 0px 0px 0px;
     }
 }
 .personagem {
@@ -100,7 +88,7 @@ body {
     grid-template-columns: repeat(16, 1fr);
     width: calc(100vw - 2%);
     height: 100vh;
-    gap: 5%;
+    gap: 5vmin;
     margin-left: 2%;
 }
 .fundoelemento {
@@ -130,8 +118,12 @@ body {
     padding: 15px;
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
-    width: 96.4vw;
-    height: 30vh;
+    position: absolute;
+    bottom: 20px;
+    justify-self: center;
+    width: calc(97vw - 60px);
+    height: 40vh;
+    overflow-y: hidden;
     background-color: var(--cor-fundo-principal);
     animation: animacaodiv 10s linear infinite;
 }
@@ -141,19 +133,64 @@ body {
 .informacaopersonagem {
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
-    width: 20vw;
-    justify-self: flex-end;
-    height: 40vh;
+    width: 30vw;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 2vw;
+    height: 35vh;
     background-color: var(--cor-fundo-principal);
-    margin-bottom: 20vh;
-    animation: animacaodiv 10s linear infinite;
+    animation: animacaodiv 5s linear infinite;
 }
 .fundocontainer1 {
     z-index: -1;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: radial-gradient(var(--cor-fundo-elemento) 3.3px, transparent 0);
     background-size: 80px 80px;
     background-position: -5px -5px
 }
+@keyframes animacaodiv {
+    0% {
+        box-shadow: var(--cor-destaque) 0px 0px 0px 0px;
+    }
+    50% {
+        box-shadow: var(--cor-destaque) 0px 0px 25px 10px;
+    }
+    100% {
+        box-shadow: var(--cor-destaque) 0px 0px 0px 0px;
+    }
+}
+.horizontal {
+    display: flex;
+}
+.divbotao {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-elemento);
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 10%;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+.divbotao:hover {
+    background-color: var(--cor-fundo-elemento);
+    color: var(--cor-destaque);
+}
+#hp, #cm, #arma {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 12px;
+}
+#nomepersonagem {
+    margin: 0;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+
+
