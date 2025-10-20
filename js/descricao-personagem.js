@@ -71,30 +71,7 @@ pitagoras.addEventListener('click', () => {
     }
     itens = [
         {   
-            index: 'Lira',
-            nome: 'Lira',
-            funcao: 'Pode-se usar 3 vezes em cada rodada, cada vez curando 1d6 de vida e 1d4 de condição mental',
-            descricao: 'Não é uma arma de força bruta, mas uma ferramenta de paz e harmonia. Esta lira tem 3 cordas que são extremamente delicadas e se quebram ao tocar, mas que ao soar elas criam uma melodia extremamente bela, restaura a vida e a condição mental do personagem.',
-            curavida: 6,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: null,
-            aumento_de_chance: null,
-            curacondicaomental: 4,
-            tempo: null
-        },
-        {   
-            index: 'Lira',
-            nome: 'Lira',
-            funcao: 'Pode-se usar 3 vezes em cada rodada, cada vez curando 1d6 de vida e 1d4 de condição mental',
-            descricao: 'Não é uma arma de força bruta, mas uma ferramenta de paz e harmonia. Esta lira tem 3 cordas que são extremamente delicadas e se quebram ao tocar, mas que ao soar elas criam uma melodia extremamente bela, restaura a vida e a condição mental do personagem.',
-            curavida: 6,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: null,
-            aumento_de_chance: null,
-            curacondicaomental: 4,
-            tempo: null
-        },
-        {   
+            quantidade: 3,
             index: 'Lira',
             nome: 'Lira',
             funcao: 'Pode-se usar 3 vezes em cada rodada, cada vez curando 1d6 de vida e 1d4 de condição mental',
@@ -160,32 +137,7 @@ newton.addEventListener('click', () => {
     }
     itens = [
         {   
-            index: 'telescopio',
-            nome: 'Telescópio Refletor',
-            funcao: 'Diminúi o CA to inimigo por 4 por 3 rodadas.',
-            descricao: 'Permite a Newton enxergar pontos fracos nos inimigos, aumentando a chance de acerto crítico.è frágil, então pode ser usado 3 vezes por rodada.',
-            curavida: null,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: 4,
-            aumento_de_chance: null,
-            curacondicaomental: null,
-            aumento_de_dano: null,
-            tempo: 3
-        },
-        {   
-            index: 'telescopio',
-            nome: 'Telescópio Refletor',
-            funcao: 'Diminúi o CA to inimigo por 4 por 3 rodadas.',
-            descricao: 'Permite a Newton enxergar pontos fracos nos inimigos, aumentando a chance de acerto crítico.è frágil, então pode ser usado 3 vezes por rodada.',
-            curavida: null,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: 4,
-            aumento_de_chance: null,
-            curacondicaomental: null,
-            aumento_de_dano: null,
-            tempo: 3
-        },
-        {   
+            quantidade: 3,
             index: 'telescopio',
             nome: 'Telescópio Refletor',
             funcao: 'Diminúi o CA to inimigo por 4 por 3 rodadas.',
@@ -252,32 +204,7 @@ albert.addEventListener('click', () => {
     }
     itens = [
         {   
-            index: 'bussola',
-            nome: 'Bússola de Gedanken',
-            funcao: 'Aumenta o 1d20 do próximo ataque em 3.',
-            descricao: 'Faz o personagem conseguir encontrar o jeito certo de atacar o inimigo. A bússola só funciona 3 vezes por rodada.',
-            curavida: null,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: null,
-            aumento_de_chance: null,
-            curacondicaomental: null,
-            aumento_de_dano: null,
-            tempo: 1
-        },
-        {   
-            index: 'bussola',
-            nome: 'Bússola de Gedanken',
-            funcao: 'Aumenta o 1d20 do próximo ataque em 3.',
-            descricao: 'Faz o personagem conseguir encontrar o jeito certo de atacar o inimigo. A bússola só funciona 3 vezes por rodada.',
-            curavida: null,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: null,
-            aumento_de_chance: null,
-            curacondicaomental: null,
-            aumento_de_dano: null,
-            tempo: 1
-        },
-        {   
+            quantidade: 3,
             index: 'bussola',
             nome: 'Bússola de Gedanken',
             funcao: 'Aumenta o 1d20 do próximo ataque em 3.',
@@ -344,32 +271,7 @@ bombado.addEventListener('click', () => {
     }
     itens = [
         {   
-            index: 'cigarro',
-            nome: 'Cigarro da Contemplação Crítica',
-            funcao: 'Aumenta o dano em 5 na proxima rodada.',
-            descricao: 'Ao usar este item, Oppenheimer para por um breve instante, acende um cigarro e dá uma longa tragada. O mundo ao redor fica em tons de cinza e o tempo desacelera por um segundo, enquanto a ponta do cigarro brilha intensamente.',
-            curavida: null,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: null,
-            aumento_de_chance: null,
-            curacondicaomental: null,
-            aumento_de_dano: 5,
-            tempo: null
-        },
-        {   
-            index: 'cigarro',
-            nome: 'Cigarro da Contemplação Crítica',
-            funcao: 'Aumenta o dano em 5 na proxima rodada.',
-            descricao: 'Ao usar este item, Oppenheimer para por um breve instante, acende um cigarro e dá uma longa tragada. O mundo ao redor fica em tons de cinza e o tempo desacelera por um segundo, enquanto a ponta do cigarro brilha intensamente.',
-            curavida: null,
-            aumento_de_CA: null,
-            diminuicao_de_CA_inimigo: null,
-            aumento_de_chance: null,
-            curacondicaomental: null,
-            aumento_de_dano: 5,
-            tempo: null
-        },
-        {   
+            quantidade: 3,
             index: 'cigarro',
             nome: 'Cigarro da Contemplação Crítica',
             funcao: 'Aumenta o dano em 5 na proxima rodada.',
