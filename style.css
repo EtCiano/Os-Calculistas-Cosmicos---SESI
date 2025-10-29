@@ -88,7 +88,8 @@ body {
     grid-template-columns: repeat(16, 1fr);
     width: calc(100vw - 2%);
     height: 100vh;
-    gap: 5vmin;
+    row-gap: 100px;
+    column-gap: 120px;
     margin-left: 2%;
 }
 .fundoelemento {
@@ -107,7 +108,7 @@ body {
     background-color: var(--cor-fundo-secundario);
 }
 .dialogotexto {
-    font-size: 30px;
+    font-size: 50px;
     margin: 0;
     hyphens: auto;
     word-wrap: break-word;
@@ -197,6 +198,7 @@ body {
     background-color: var(--cor-destaque);
     color: var(--cor-fundo-elemento);
     font-weight: bolder;
+    font-size: 30px;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
@@ -210,22 +212,23 @@ body {
 }
 #hp, #cm, #arma {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     margin: 12px;
 }
 #nome-personagem {
     margin: 0;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 38px;
 }
 .item {
-    font-size: 16px;
+    font-size: 30px;
 }
 .item-titulo {
+    font-size: 30px;
     margin: 0;
 }
 .item-descricao {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
