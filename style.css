@@ -6,6 +6,24 @@
     --cor-texto-secundario: black;
     --cor-destaque: bisque;
 }
+@keyframes animacaoinimigo1 {
+    0% {
+        rotate: 0deg;
+        scale: 1.2;
+    }
+    25% {
+        rotate: 7deg;
+        scale: 1.25;
+    }
+    75% {
+        rotate: -7deg;
+        scale: 1.3;
+    }
+    100% {
+        rotate: 0deg;
+        scale: 1.2;
+    }
+}
 body {
     padding: 0;
     margin: 0px;
@@ -230,5 +248,48 @@ body {
 .item-descricao {
     font-size: 20px;
 }
-
-
+.imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--cor-destaque);
+    border-radius: 20px;
+    height: 40vh;
+    width: 25vw;
+    animation: animacaodiv 3s linear infinite;
+}
+.inimigoimagem1 {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    animation: animacaoinimigo1 3s ease-in-out infinite;
+    scale: 1.2;
+}
+.div_vertical {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div_horizontal {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nomeinimigo {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+.log-inimigo {
+    font-size: 20px;
+    border: 10px var(--cor-destaque) solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 65vw;
+    animation: animacaodiv 3s linear infinite;
+    height: 38vh;
+    margin-top: 7.2vh;
+}
