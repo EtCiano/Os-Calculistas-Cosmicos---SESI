@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="fundocontainer1"></div>
     <div class="div_horizontal">
         <div class="log-inimigo">
             <ul>
@@ -20,11 +21,34 @@
             </ul>
         </div>
         <div class="div_vertical">
-            <h1 class="nomeinimigo">O Enxame Dissonante</h1>
+            <div class="div_horizontal" style="justify-content: center; justify-self: center; width: 25vw;">
+                <h1 class="nomeinimigo">O Enxame Dissonante</h1>
+                <h1 class="nomeinimigo">Vida: <strong id="hp-inimigo-atual">2</strong>/<strong id="hp-inimigo-total">2</strong></h1>
+            </div>
             <div class="imagem-container">
                 <img class="inimigoimagem1" src="Inimigo1.png">
             </div>
         </div>
     </div>
+    <div class="div_vertical" style="height: 45vh;  margin-top: 2vh;  width: 95vw;">
+        <div class="div_horizontal" style="justify-content: space-around; height: 30%; width: 100%; margin-bottom: 20px;">
+            <button class="botao_luta">ATACAR</button>
+            <button class="botao_luta1 botao_luta">HABILIDADE 1</button>
+            <button class="botao_luta2 botao_luta">HABILIDADE 2</button>
+            <button class="botao_luta">ITEM</button>
+            <button class="botao_luta">DEFENDER</button>
+        </div>
+        <div class="div_horizontal" style="justify-content: space-around; height: 50%; width: 100%;">
+            <div class="status_jogador">
+                <h2 class="informacaopersonagem_luta" id="nome-personagem_luta">NOME</h2>
+                <h3 class="informacaopersonagem_luta" id="hp_luta">Vida: <strong id="hp-atual">2</strong>/<strong id="hp-total">2</strong></h3>
+                <h3 class="informacaopersonagem_luta" id="cm_luta">Condição Mental: <strong id="cm-atual">3</strong>/<strong id="cm-total">3</strong></h3>
+                <h3 class="informacaopersonagem_luta" id="arma_luta">Arma: <strong id="nome-arma">nome da arma</strong></h3>
+            </div>
+            <div class="descricao-botoes_luta">
+                
+            </div>
+        </div>
+    </div>  
 </body>
 </html>
