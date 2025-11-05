@@ -249,6 +249,7 @@ body {
     font-size: 20px;
 }
 .imagem-container {
+    background-color: var(--cor-fundo-principal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,10 +281,11 @@ body {
 }
 .nomeinimigo {
     text-align: center;
-    font-size: 40px;
+    font-size: 28px;
     margin: 10px;
 }
 .log-inimigo {
+    background-color: var(--cor-fundo-principal);
     font-size: 20px;
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
@@ -291,5 +293,54 @@ body {
     width: 65vw;
     animation: animacaodiv 3s linear infinite;
     height: 38vh;
-    margin-top: 7.2vh;
+    margin-top: 6vh;
+}
+.botao_luta {
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-destaque);
+    border: 10px solid var(--cor-destaque);
+    border-radius: 20px;
+    width: 18%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.botao_luta1 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.botao_luta2 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.botao_luta:hover, .botao_luta1:hover, .botao_luta2:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-elemento);
+}
+.status_jogador {
+    border: 10px var(--cor-destaque) solid;
+    border-radius: 20px;
+    margin-top: 40px;
+    width: 30%;
+    height: 110%;
+}
+.informacaopersonagem_luta {
+    font-size: 40px;
+    margin: 5px;
+}
+.descricao-botoes_luta {
+    margin-top: 20px;
+    font-size: 25px;
+    height: 50%;
+    margin-top: 40px;
+    height: 100%;
+    width: 64%;
+    border: 10px var(--cor-destaque) solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--cor-fundo-principal);
 }
