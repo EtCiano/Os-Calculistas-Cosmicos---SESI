@@ -136,18 +136,45 @@ switch (personagem.index) {
     console.log(dialogos1);
 
     const dialogodiv = document.getElementById('dialogodiv');
+    const dialogoTextoEl = dialogodiv.querySelector('.dialogotexto');
     let dialogoIndex = 0;
+    let isTyping = false;
+    let typingTimeout;
 
     dialogodiv.addEventListener('click', () => {
-        atualizarDialogo();
-        })
+        if (isTyping) {
+            clearTimeout(typingTimeout);
+            isTyping = false;
+            dialogoTextoEl.textContent = dialogos1[dialogoIndex - 1];
+            document.getElementById('botao-dialogo').style.transform = 'scale(5)';
+        } else {
+            atualizarDialogo();
+        }
+    });
+
+    function typeText(text) {
+        isTyping = true;
+        document.getElementById('botao-dialogo').style.transform = 'scale(0)';
+        dialogoTextoEl.textContent = '';
+        let i = 0;
+        function addChar() {
+            if (i < text.length) {
+                dialogoTextoEl.textContent += text.charAt(i);
+                i++;
+                typingTimeout = setTimeout(addChar, 10);
+            } else {
+                isTyping = false;
+                document.getElementById('botao-dialogo').style.transform = 'scale(5)';
+            }
+        }
+        addChar();
+    }
 
     function atualizarDialogo() {
         if (dialogoIndex < dialogos1.length) {
-            dialogodiv.querySelector('.dialogotexto').textContent = dialogos1[dialogoIndex];
+            typeText(dialogos1[dialogoIndex]);
             dialogoIndex++;
         } else {
-            console.log('Diálogo concluído.');
             window.open("luta1.html", "_self");
         }
     }
