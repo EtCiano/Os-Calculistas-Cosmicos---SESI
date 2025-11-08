@@ -154,6 +154,9 @@ body {
 .bodydialogo {
     display: block;
 }
+.body_luta {
+    padding-top: 20px;
+}
 .informacaopersonagem {
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
@@ -262,7 +265,7 @@ body {
     border-radius: 20px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    height: 40vh;
+    height: 81.5%;
     width: 100%;
     animation: animacaodiv 3s linear infinite;
 }
@@ -300,9 +303,9 @@ body {
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
     padding: 10px;
-    width: 65vw;
+    width: 65%;
     animation: animacaodiv 3s linear infinite;
-    height: 100%;
+    min-height: 100%;
 }
 .botao_luta {
     font-family: "Quicksand", sans-serif;
@@ -312,7 +315,7 @@ body {
     color: var(--cor-destaque);
     border: 10px solid var(--cor-destaque);
     border-radius: 20px;
-    width: 18%;
+    width: 17.5%;
     height: 100%;
     cursor: pointer;
     transition: 0.25s ease-in-out;
@@ -333,21 +336,17 @@ body {
 .status_jogador {
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
-    margin-top: 40px;
     width: 30%;
     height: 110%;
 }
 .informacaopersonagem_luta {
-    font-size: 40px;
+    font-size: 35px;
     margin: 5px;
 }
 .descricao-botoes_luta {
-    margin-top: 20px;
     font-size: 25px;
-    height: 50%;
-    margin-top: 40px;
-    height: 100%;
-    width: 64%;
+    height: 110%;
+    width: 69%;
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
     padding: 10px;
@@ -361,4 +360,54 @@ body {
     right: 60px;
     transition: 0.15s ease-in-out;
     transform: scale(5);
+}
+
+.div_vertical_inimigo {
+    width: 32%;
+    gap: 0;
+}
+
+.div_horizontal_cabecalho {
+    justify-content: space-between;
+    justify-self: center;
+    width: 100%;
+}
+
+.nomeinimigo_esquerda {
+    width: 70%;
+    border-top-left-radius: 20px;
+}
+
+.nomeinimigo_direita {
+    width: 30%;
+    border-top-right-radius: 20px;
+}
+
+.div_vertical_controles {
+    height: 45vh;
+    margin-top: 2vh;
+    width: 95vw;
+}
+
+.div_horizontal_botoes {
+    justify-content: space-around;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 0;
+}
+
+.div_horizontal_status {
+    justify-content: space-around;
+    height: 50%;
+    width: 97.5%;
+    margin-left: 22px;
+}
+
+.div_horizontal_log {
+    display: flex;
+    justify-content: space-around;
+    width: 94.5%;
+    height: 53vh;
+    gap: 0;
 }
