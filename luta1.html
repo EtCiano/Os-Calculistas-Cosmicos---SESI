@@ -12,33 +12,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body_luta">
     <div class="fundocontainer1"></div>
-    <div class="div_horizontal">
+    <div class="div_horizontal div_horizontal_log">
         <div class="log-inimigo">
             <ul>
                 <li>aqui vão estar os acontecimentos da batalha</li>
             </ul>
         </div>
-        <div class="div_vertical" style="width: 25vw; gap: 0;">
-            <div class="div_horizontal" style="justify-content: space-between; justify-self: center; width: 100%;">
-                <h1 class="nomeinimigo" style="border-top-left-radius: 20px;">O Enxame Dissonante</h1>
-                <h1 class="nomeinimigo" style="border-top-right-radius: 20px;">Vida: <strong id="hp-inimigo-atual">2</strong>/<strong id="hp-inimigo-total">2</strong></h1>
+        <div class="div_vertical div_vertical_inimigo">
+            <div class="div_horizontal div_horizontal_cabecalho">
+                <h1 class="nomeinimigo nomeinimigo_esquerda">O Enxame Dissonante</h1>
+                <h1 class="nomeinimigo nomeinimigo_direita">Vida: <strong id="hp-inimigo-atual">2</strong>/<strong id="hp-inimigo-total">2</strong></h1>
             </div>
             <div class="imagem-container">
                 <img class="inimigoimagem1" src="Inimigo1.png">
             </div>
         </div>
     </div>
-    <div class="div_vertical" style="height: 45vh;  margin-top: 2vh;  width: 95vw;">
-        <div class="div_horizontal" style="justify-content: space-around; height: 30%; width: 100%; margin-bottom: 20px;">
+    <div class="div_vertical div_vertical_controles">
+        <div class="div_horizontal div_horizontal_botoes">
             <button class="botao_luta">ATACAR</button>
             <button class="botao_luta1 botao_luta">HABILIDADE 1</button>
             <button class="botao_luta2 botao_luta">HABILIDADE 2</button>
             <button class="botao_luta">ITEM</button>
             <button class="botao_luta">DEFENDER</button>
         </div>
-        <div class="div_horizontal" style="justify-content: space-around; height: 50%; width: 100%;">
+        <div class="div_horizontal div_horizontal_status">
             <div class="status_jogador">
                 <h2 class="informacaopersonagem_luta" id="nome-personagem_luta">NOME</h2>
                 <h3 class="informacaopersonagem_luta" id="hp_luta">Vida: <strong id="hp-atual">2</strong>/<strong id="hp-total">2</strong></h3>
