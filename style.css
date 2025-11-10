@@ -151,6 +151,12 @@ body {
     background-color: var(--cor-fundo-principal);
     animation: animacaodiv 10s linear infinite;
 }
+.dialogo, .dialogotexto {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
 .bodydialogo {
     display: block;
 }
@@ -171,17 +177,17 @@ body {
     overflow-y: auto;
 }
 
-.informacaopersonagem::-webkit-scrollbar {
+div::-webkit-scrollbar {
     width: 30px;
 }
 
-.informacaopersonagem::-webkit-scrollbar-track {
+div::-webkit-scrollbar-track {
     background: var(--cor-fundo-principal);
     border-radius: 10px;
     background-clip: content-box;
 }
 
-.informacaopersonagem::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb {
     background: var(--cor-destaque);
     border-radius: 13px;
     border: 10px solid transparent;
@@ -344,13 +350,16 @@ body {
     margin: 5px;
 }
 .descricao-botoes_luta {
-    font-size: 25px;
+    font-size: 30px;
     height: 110%;
     width: 69%;
     border: 10px var(--cor-destaque) solid;
     border-radius: 20px;
     padding: 10px;
     background-color: var(--cor-fundo-principal);
+    overflow-x: hidden;
+    overflow-y: auto;
+
 }
 .botao-dialogo {
     position: absolute;
@@ -410,4 +419,26 @@ body {
     width: 94.5%;
     height: 53vh;
     gap: 0;
+}
+.item_luta {
+    font-size: 30px;
+    margin: 0;
+}
+.item-titulo_luta {
+    font-size: 30px;
+    margin-top: 0;
+}
+.item-descricao_luta {
+    font-size: 20px;
+}
+.itemdiv_luta {
+    border-radius: 20px;
+    transition: 0.25s ease-in-out;
+    padding: 10px;
+}
+.itemdiv_luta:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-elemento);
+    box-shadow: var(--cor-destaque) 0px 0px 50px;
+    font-weight: bold;
 }
