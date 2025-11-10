@@ -32,11 +32,11 @@
     </div>
     <div class="div_vertical div_vertical_controles">
         <div class="div_horizontal div_horizontal_botoes">
-            <button class="botao_luta">ATACAR</button>
-            <button class="botao_luta1 botao_luta">HABILIDADE 1</button>
-            <button class="botao_luta2 botao_luta">HABILIDADE 2</button>
-            <button class="botao_luta">ITEM</button>
-            <button class="botao_luta">DEFENDER</button>
+            <button id="botao-atacar" class="botao_luta">ATACAR</button>
+            <button id="botao-habilidade1" class="botao_luta1 botao_luta">HABILIDADE 1</button>
+            <button id="botao-habilidade2" class="botao_luta2 botao_luta">HABILIDADE 2</button>
+            <button id="botao-item" class="botao_luta">ITEM</button>
+            <button id="botao-defender" class="botao_luta">DEFENDER</button>
         </div>
         <div class="div_horizontal div_horizontal_status">
             <div class="status_jogador">
@@ -45,10 +45,11 @@
                 <h3 class="informacaopersonagem_luta" id="cm_luta">Condição Mental: <strong id="cm-atual">3</strong>/<strong id="cm-total">3</strong></h3>
                 <h3 class="informacaopersonagem_luta" id="arma_luta">Arma: <strong id="nome-arma">nome da arma</strong></h3>
             </div>
-            <div class="descricao-botoes_luta">
+            <div class="descricao-botoes_luta" id="descricao-botoes_luta">
                 
             </div>
         </div>
     </div>  
+    <script src="js/luta.js"></script>
 </body>
 </html>
