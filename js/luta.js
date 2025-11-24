@@ -1,5 +1,35 @@
-const personagem = JSON.parse(localStorage.getItem('personagem'));
-const itens = JSON.parse(localStorage.getItem('itens'));
+let personagem = JSON.parse(localStorage.getItem('personagem'));
+let itens = JSON.parse(localStorage.getItem('itens'));
+let loginicial = document.getElementById('loginicial');
+loginicial.textContent = `Um Enxame de pequenas criaturas feitas de geometria quebrada e ângulos impossíveis que se movem de forma caótica e errática aparecem na frente de ${personagem.nome}. Elas não são poderosas individualmente, mas atacam em grandes números, zunindo com um som de áudio distorcido e desafinado.`
+
+let inimigo = {
+    index: 'enxame',
+    nome: 'O Enxame Dissonante',
+    vidatotal: 25,
+    vidaatual: 25,
+    ataque: {
+        dado1: 20,  
+        necessita: true,  
+        modificador: null,
+        numero_necessario: null, 
+        dado2: 4,
+        logs: [`Um grito é emitido pelas criaturas do enxame, a frequencia é tão alta que machuca ${personagem.nome}.`, `As criaturas do enxame atacam em bando, mordendo e arranhando ${personagem.nome}.`, `As criaturas do enxame se lançam contra ${personagem.nome}, tentando sufoca-lo com seus corpos.`],
+        },
+    ca: 15
+}
+
+const log_lista = document.getElementById('log-lista');
+const hp_inimigo_atual = document.getElementById('hp-inimigo-atual')
+const hp_inimigo_total = document.getElementById('hp-inimigo-total')
+hp_inimigo_total.textContent = inimigo.vidatotal
+hp_inimigo_atual.textContent = inimigo.vidaatual
+
+function adicionarLog(mensagem, dano) {
+    const novoItem = document.createElement('li');
+    novoItem.textContent = mensagem[Math.floor(Math.random() * mensagem.length)] + ` Causou ${dano} de dano.`;
+    log_lista.appendChild(novoItem);
+}
 
 console.log(personagem);
 console.log(itens);
@@ -35,6 +65,18 @@ botao_atacar.addEventListener('mouseenter', () => {
 })
 botao_atacar.addEventListener('mouseleave', () => {
     descricao_botoes.textContent = ''
+})
+botao_atacar.addEventListener('click', () => {
+    if (Math.floor(Math.random() * (personagem.arma.dado1 - 1 + 1)) + 1 <= inimigo.ca) {
+        dano = Math.floor(Math.random() * (personagem.arma.dado2 - 1 + 1)) + 1
+        console.log('acertou')
+        inimigo.vidaatual -= dano  
+        adicionarLog(personagem.arma.logs, dano)
+        hp_inimigo_atual.textContent = inimigo.vidaatual
+    } else {
+        console.log('errou')
+        adicionarLog(personagem.arma.logserro)
+    }
 })
 
 botao_habilidade1.addEventListener('mouseenter', () => {
